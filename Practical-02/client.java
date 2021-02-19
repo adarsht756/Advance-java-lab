@@ -4,7 +4,7 @@ import java.net.*;
 public class Client {
     public static void main(String[] args) {
         try {
-            Socket s = new Socket("192.168.44.188", 8080);
+            Socket s = new Socket("192.168.42.242", 8080);
             DataOutputStream dout = new DataOutputStream(s.getOutputStream());
             dout.writeUTF("Hello server");
             dout.flush();
